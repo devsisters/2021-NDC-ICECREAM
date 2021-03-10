@@ -1,0 +1,7 @@
+#!/bin/sh
+
+export ICECC_CC="${CMAKE_C_COMPILER}"
+export ICECC_CXX="${CMAKE_CXX_COMPILER}"
+export ICECC_VERSION="${ICECC_VERSION}"
+shift
+exec "${ICECC}" $@
